@@ -16,6 +16,12 @@
 		39F9CC121B8AB224008C0093 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39F9CC101B8AB224008C0093 /* LaunchScreen.storyboard */; };
 		39F9CC1D1B8AB224008C0093 /* GestureAndTouchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F9CC1C1B8AB224008C0093 /* GestureAndTouchTests.m */; };
 		39F9CC281B8AB224008C0093 /* GestureAndTouchUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F9CC271B8AB224008C0093 /* GestureAndTouchUITests.m */; };
+		39F9CC371B8AB3A7008C0093 /* DragView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F9CC361B8AB3A7008C0093 /* DragView.m */; };
+		39F9CC3B1B8ABD7B008C0093 /* 94cad1c8a786c9177582c830cb3d70cf3bc75731.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 39F9CC3A1B8ABD7B008C0093 /* 94cad1c8a786c9177582c830cb3d70cf3bc75731.jpg */; };
+		39F9CC3E1B8ACAA8008C0093 /* DragView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F9CC3D1B8ACAA8008C0093 /* DragView2.m */; };
+		39F9CC401B8ACDB4008C0093 /* 501f448b145f788877acc7ca715aad52.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 39F9CC3F1B8ACDB4008C0093 /* 501f448b145f788877acc7ca715aad52.jpg */; };
+		39F9CC421B8AEA1E008C0093 /* 92cdc35dc284fbdda66bef6757e03baf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 39F9CC411B8AEA1E008C0093 /* 92cdc35dc284fbdda66bef6757e03baf.jpg */; };
+		39F9CC451B8AEA2F008C0093 /* DragView3.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F9CC441B8AEA2F008C0093 /* DragView3.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,15 @@
 		39F9CC231B8AB224008C0093 /* GestureAndTouchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GestureAndTouchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39F9CC271B8AB224008C0093 /* GestureAndTouchUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestureAndTouchUITests.m; sourceTree = "<group>"; };
 		39F9CC291B8AB224008C0093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39F9CC351B8AB3A7008C0093 /* DragView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragView.h; sourceTree = "<group>"; };
+		39F9CC361B8AB3A7008C0093 /* DragView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragView.m; sourceTree = "<group>"; };
+		39F9CC3A1B8ABD7B008C0093 /* 94cad1c8a786c9177582c830cb3d70cf3bc75731.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 94cad1c8a786c9177582c830cb3d70cf3bc75731.jpg; sourceTree = "<group>"; };
+		39F9CC3C1B8ACAA8008C0093 /* DragView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragView2.h; sourceTree = "<group>"; };
+		39F9CC3D1B8ACAA8008C0093 /* DragView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragView2.m; sourceTree = "<group>"; };
+		39F9CC3F1B8ACDB4008C0093 /* 501f448b145f788877acc7ca715aad52.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 501f448b145f788877acc7ca715aad52.jpg; sourceTree = "<group>"; };
+		39F9CC411B8AEA1E008C0093 /* 92cdc35dc284fbdda66bef6757e03baf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 92cdc35dc284fbdda66bef6757e03baf.jpg; sourceTree = "<group>"; };
+		39F9CC431B8AEA2F008C0093 /* DragView3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragView3.h; sourceTree = "<group>"; };
+		39F9CC441B8AEA2F008C0093 /* DragView3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragView3.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +122,15 @@
 				39F9CC031B8AB224008C0093 /* AppDelegate.m */,
 				39F9CC051B8AB224008C0093 /* ViewController.h */,
 				39F9CC061B8AB224008C0093 /* ViewController.m */,
+				39F9CC351B8AB3A7008C0093 /* DragView.h */,
+				39F9CC361B8AB3A7008C0093 /* DragView.m */,
+				39F9CC3C1B8ACAA8008C0093 /* DragView2.h */,
+				39F9CC3D1B8ACAA8008C0093 /* DragView2.m */,
+				39F9CC431B8AEA2F008C0093 /* DragView3.h */,
+				39F9CC441B8AEA2F008C0093 /* DragView3.m */,
+				39F9CC3A1B8ABD7B008C0093 /* 94cad1c8a786c9177582c830cb3d70cf3bc75731.jpg */,
+				39F9CC3F1B8ACDB4008C0093 /* 501f448b145f788877acc7ca715aad52.jpg */,
+				39F9CC411B8AEA1E008C0093 /* 92cdc35dc284fbdda66bef6757e03baf.jpg */,
 				39F9CC081B8AB224008C0093 /* Main.storyboard */,
 				39F9CC0E1B8AB224008C0093 /* Assets.xcassets */,
 				39F9CC101B8AB224008C0093 /* LaunchScreen.storyboard */,
@@ -249,6 +273,9 @@
 				39F9CC121B8AB224008C0093 /* LaunchScreen.storyboard in Resources */,
 				39F9CC0F1B8AB224008C0093 /* Assets.xcassets in Resources */,
 				39F9CC0A1B8AB224008C0093 /* Main.storyboard in Resources */,
+				39F9CC421B8AEA1E008C0093 /* 92cdc35dc284fbdda66bef6757e03baf.jpg in Resources */,
+				39F9CC3B1B8ABD7B008C0093 /* 94cad1c8a786c9177582c830cb3d70cf3bc75731.jpg in Resources */,
+				39F9CC401B8ACDB4008C0093 /* 501f448b145f788877acc7ca715aad52.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +303,10 @@
 				39F9CC071B8AB224008C0093 /* ViewController.m in Sources */,
 				39F9CC0D1B8AB224008C0093 /* GestureAndTouch.xcdatamodeld in Sources */,
 				39F9CC041B8AB224008C0093 /* AppDelegate.m in Sources */,
+				39F9CC3E1B8ACAA8008C0093 /* DragView2.m in Sources */,
 				39F9CC011B8AB224008C0093 /* main.m in Sources */,
+				39F9CC371B8AB3A7008C0093 /* DragView.m in Sources */,
+				39F9CC451B8AEA2F008C0093 /* DragView3.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +397,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -405,7 +435,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -418,6 +448,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GestureAndTouch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZKR.GestureAndTouch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -429,6 +460,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GestureAndTouch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZKR.GestureAndTouch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
