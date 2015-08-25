@@ -67,14 +67,14 @@
     self.transform=CGAffineTransformScale(self.transform, scale, scale);
 }
 
--(void)touchesBegan:(nonnull NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [self.superview bringSubviewToFront:self];
     tx=self.transform.tx;
     ty=self.transform.ty;
     //初始化不成功 UIImageView并没有scale和rotation属性
 }
--(void)touchesEnded:(nonnull NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event
+-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
     UITouch *touch=[touches anyObject];
     //三连击复原
@@ -86,7 +86,7 @@
         theta=0.0f;
     }
 }
--(void)touchesCancelled:(nullable NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event
+-(void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [self touchesEnded:touches withEvent:event];
 }

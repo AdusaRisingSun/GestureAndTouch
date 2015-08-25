@@ -22,18 +22,29 @@
     return self;
 }
 
--(void)touchesBegan:(nonnull NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     startPoint=[[touches anyObject]locationInView:self];
     [self.superview bringSubviewToFront:self];
 }
 
--(void)touchesMoved:(nonnull NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event
+-(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
     CGPoint touchPoint=[[touches anyObject]locationInView:self];
     CGPoint newPoint=CGPointMake(self.center.x+touchPoint.x-startPoint.x, self.center.y+touchPoint.y-startPoint.y);
     self.center=newPoint;
 }
+
+//
+//-(BOOL)pointInside:(CGPoint)point withEvent:(nullable UIEvent *)event
+//{
+//    //point是在本类的实例的左上角为(0,0)点的坐标系中的坐标
+//    if (point.x>=0&&point.x<=132&&point.y>=0&&point.y<=204) {
+//          return YES;
+//    }
+//    NSLog(@"x=%f,y=%f",point.x,point.y);
+//    return NO;
+//}
 
 /*
 // Only override drawRect: if you perform custom drawing.

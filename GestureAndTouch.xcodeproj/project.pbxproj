@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		391BF2711B8C178D00F82F11 /* icotrip-violence-33.png in Resources */ = {isa = PBXBuildFile; fileRef = 391BF2701B8C178D00F82F11 /* icotrip-violence-33.png */; };
+		391BF2741B8C18DA00F82F11 /* BitmapCollisionDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = 391BF2731B8C18DA00F82F11 /* BitmapCollisionDetection.m */; };
+		39E319131B8C4E0400800D5D /* TouchTrackerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E319121B8C4E0400800D5D /* TouchTrackerView.m */; };
 		39F9CC011B8AB224008C0093 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F9CC001B8AB224008C0093 /* main.m */; };
 		39F9CC041B8AB224008C0093 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F9CC031B8AB224008C0093 /* AppDelegate.m */; };
 		39F9CC071B8AB224008C0093 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F9CC061B8AB224008C0093 /* ViewController.m */; };
@@ -42,6 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		391BF2701B8C178D00F82F11 /* icotrip-violence-33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icotrip-violence-33.png"; sourceTree = "<group>"; };
+		391BF2721B8C18DA00F82F11 /* BitmapCollisionDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitmapCollisionDetection.h; sourceTree = "<group>"; };
+		391BF2731B8C18DA00F82F11 /* BitmapCollisionDetection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitmapCollisionDetection.m; sourceTree = "<group>"; };
+		39E319111B8C4E0400800D5D /* TouchTrackerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchTrackerView.h; sourceTree = "<group>"; };
+		39E319121B8C4E0400800D5D /* TouchTrackerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchTrackerView.m; sourceTree = "<group>"; };
 		39F9CBFC1B8AB224008C0093 /* GestureAndTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GestureAndTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39F9CC001B8AB224008C0093 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		39F9CC021B8AB224008C0093 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -128,9 +136,14 @@
 				39F9CC3D1B8ACAA8008C0093 /* DragView2.m */,
 				39F9CC431B8AEA2F008C0093 /* DragView3.h */,
 				39F9CC441B8AEA2F008C0093 /* DragView3.m */,
+				391BF2721B8C18DA00F82F11 /* BitmapCollisionDetection.h */,
+				391BF2731B8C18DA00F82F11 /* BitmapCollisionDetection.m */,
+				39E319111B8C4E0400800D5D /* TouchTrackerView.h */,
+				39E319121B8C4E0400800D5D /* TouchTrackerView.m */,
 				39F9CC3A1B8ABD7B008C0093 /* 94cad1c8a786c9177582c830cb3d70cf3bc75731.jpg */,
 				39F9CC3F1B8ACDB4008C0093 /* 501f448b145f788877acc7ca715aad52.jpg */,
 				39F9CC411B8AEA1E008C0093 /* 92cdc35dc284fbdda66bef6757e03baf.jpg */,
+				391BF2701B8C178D00F82F11 /* icotrip-violence-33.png */,
 				39F9CC081B8AB224008C0093 /* Main.storyboard */,
 				39F9CC0E1B8AB224008C0093 /* Assets.xcassets */,
 				39F9CC101B8AB224008C0093 /* LaunchScreen.storyboard */,
@@ -272,6 +285,7 @@
 			files = (
 				39F9CC121B8AB224008C0093 /* LaunchScreen.storyboard in Resources */,
 				39F9CC0F1B8AB224008C0093 /* Assets.xcassets in Resources */,
+				391BF2711B8C178D00F82F11 /* icotrip-violence-33.png in Resources */,
 				39F9CC0A1B8AB224008C0093 /* Main.storyboard in Resources */,
 				39F9CC421B8AEA1E008C0093 /* 92cdc35dc284fbdda66bef6757e03baf.jpg in Resources */,
 				39F9CC3B1B8ABD7B008C0093 /* 94cad1c8a786c9177582c830cb3d70cf3bc75731.jpg in Resources */,
@@ -302,9 +316,11 @@
 			files = (
 				39F9CC071B8AB224008C0093 /* ViewController.m in Sources */,
 				39F9CC0D1B8AB224008C0093 /* GestureAndTouch.xcdatamodeld in Sources */,
+				39E319131B8C4E0400800D5D /* TouchTrackerView.m in Sources */,
 				39F9CC041B8AB224008C0093 /* AppDelegate.m in Sources */,
 				39F9CC3E1B8ACAA8008C0093 /* DragView2.m in Sources */,
 				39F9CC011B8AB224008C0093 /* main.m in Sources */,
+				391BF2741B8C18DA00F82F11 /* BitmapCollisionDetection.m in Sources */,
 				39F9CC371B8AB3A7008C0093 /* DragView.m in Sources */,
 				39F9CC451B8AEA2F008C0093 /* DragView3.m in Sources */,
 			);
@@ -534,6 +550,7 @@
 				39F9CC2E1B8AB224008C0093 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39F9CC2F1B8AB224008C0093 /* Build configuration list for PBXNativeTarget "GestureAndTouchTests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +559,7 @@
 				39F9CC311B8AB224008C0093 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39F9CC321B8AB224008C0093 /* Build configuration list for PBXNativeTarget "GestureAndTouchUITests" */ = {
 			isa = XCConfigurationList;
@@ -550,6 +568,7 @@
 				39F9CC341B8AB224008C0093 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
