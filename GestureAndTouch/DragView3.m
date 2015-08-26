@@ -14,17 +14,20 @@
     CGFloat ty;
     CGFloat scale;
     CGFloat theta;
+    CGFloat identifer;
 }
 
 -(instancetype)initWithImage:(nullable UIImage *)animage
 {
     self=[super initWithImage:animage];
+    NSLog(@"wocao");
+    tx=0.0f;
+    ty=0.0f;
+    scale=1.0f;
+    theta=0.0f;
+    identifer=0.0f;
     if (self) {
         self.userInteractionEnabled=YES;
-        tx=0.0f;
-        ty=0.0f;
-        scale=1.0f;
-        theta=0.0f;
         UIPanGestureRecognizer *pan=[[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(handlePan:)];
         UIPinchGestureRecognizer *pinch=[[UIPinchGestureRecognizer alloc]initWithTarget:self action:@selector(handlePinch:)];
         UIRotationGestureRecognizer *rotation=[[UIRotationGestureRecognizer alloc]initWithTarget:self action:@selector(handleRotation:)];
@@ -50,13 +53,34 @@
 
 -(void)handlePinch:(UIPinchGestureRecognizer*)pinch
 {
-    scale=pinch.scale;
+    float a=scale-1.0f;
+    scale=MAX(0.5f , pinch.scale+a);
+    scale=MIN(4.0f, scale);
+    //NSLog(@"handlePinch'pinch.scale=%f",pinch.scale);
+    //NSLog(@"handlePinch'scale=%f",scale);
     [self updateTransformWithOffset:CGPointZero];
 }
 
 -(void)handleRotation:(UIRotationGestureRecognizer *)rotation
 {
-    theta=rotation.rotation;
+//    NSLog(@"bandleRotation'rotation=%f",rotation.rotation);
+//    theta=theta+rotation.rotation;
+//    NSLog(@"bandleRotation'thrta=%f",theta);
+    if (rotation.rotation>0) {
+        if (rotation.rotation>identifer) {
+            theta=theta+0.05;
+        }else if (rotation.rotation<identifer) {
+            theta=theta-0.05;
+        }
+    }
+    if (rotation.rotation<0) {
+        if (rotation.rotation<identifer) {
+            theta=theta-0.05;
+        }else if (rotation.rotation>identifer) {
+            theta=theta+0.05;
+        }
+    }
+    identifer=rotation.rotation;
     [self updateTransformWithOffset:CGPointZero];
 }
 
@@ -64,16 +88,25 @@
 {
     self.transform=CGAffineTransformMakeTranslation(translation.x+tx, translation.y+ty);
     self.transform=CGAffineTransformRotate(self.transform, theta);
+    if (scale<0.5)
+    {
+        self.transform=CGAffineTransformScale(self.transform, 0.5, 0.5);
+    }else{
     self.transform=CGAffineTransformScale(self.transform, scale, scale);
+    }
 }
-
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [self.superview bringSubviewToFront:self];
     tx=self.transform.tx;
     ty=self.transform.ty;
-    //初始化不成功 UIImageView并没有scale和rotation属性
 }
+
+-(void)touchesMoved:(nonnull NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event
+{
+    
+}
+
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
     UITouch *touch=[touches anyObject];
@@ -85,6 +118,7 @@
         scale=1.0f;
         theta=0.0f;
     }
+
 }
 -(void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
 {

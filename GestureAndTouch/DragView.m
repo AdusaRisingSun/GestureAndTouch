@@ -35,16 +35,16 @@
     self.center=newPoint;
 }
 
-//
-//-(BOOL)pointInside:(CGPoint)point withEvent:(nullable UIEvent *)event
-//{
-//    //point是在本类的实例的左上角为(0,0)点的坐标系中的坐标
-//    if (point.x>=0&&point.x<=132&&point.y>=0&&point.y<=204) {
-//          return YES;
-//    }
-//    NSLog(@"x=%f,y=%f",point.x,point.y);
-//    return NO;
-//}
+
+-(BOOL)pointInside:(CGPoint)point withEvent:(nullable UIEvent *)event
+{
+    //point是在本类的实例的左上角为(0,0)点的坐标系中的坐标
+    if (!CGRectContainsPoint(self.bounds, point)) {
+        return NO;
+    }
+    //NSLog(@"x=%f,y=%f",point.x,point.y);
+    return YES;
+}
 
 /*
 // Only override drawRect: if you perform custom drawing.

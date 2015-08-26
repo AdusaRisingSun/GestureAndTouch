@@ -52,6 +52,7 @@ static NSUInteger alphaOffset(NSUInteger x,NSUInteger y,NSUInteger w)
     self=[super initWithImage:animage];
     if (self) {
         self.userInteractionEnabled=YES;
+        self.backgroundColor=[UIColor lightGrayColor];
         data=[self getBitmapFromImage:animage];
         //实例化手势识别器
         UIPanGestureRecognizer *panGesture=[[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(handlePan:)];
@@ -93,8 +94,9 @@ static NSUInteger alphaOffset(NSUInteger x,NSUInteger y,NSUInteger w)
     if (!CGRectContainsPoint(self.bounds, point)) {
         return NO;
     }
+    NSLog(@"w=%f,h=%f",self.bounds.size.width,self.bounds.size.height);
     Byte*bytes=(Byte*)data.bytes;
-    NSUInteger offset=alphaOffset(point.x, point.y, self.bounds.size.width);
+    uint offset=alphaOffset(point.x, point.y, self.bounds.size.width);
     NSLog(@"x=%f,y=%f",point.x,point.y);
     return (bytes[offset]>85);
 }

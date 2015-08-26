@@ -9,4 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface DragView3 : UIImageView<UIGestureRecognizerDelegate>
+
 @end
