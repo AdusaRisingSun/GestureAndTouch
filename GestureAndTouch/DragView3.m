@@ -102,7 +102,7 @@
     ty=self.transform.ty;
 }
 
--(void)touchesMoved:(nonnull NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event
+-(void)touchesMoved:(nonnull UITouch*)touches withEvent:(nullable UIEvent *)event
 {
     
 }

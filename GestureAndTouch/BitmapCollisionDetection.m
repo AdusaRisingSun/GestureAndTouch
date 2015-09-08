@@ -42,7 +42,7 @@ static NSUInteger alphaOffset(NSUInteger x,NSUInteger y,NSUInteger w)
     CGRect rect=(CGRect){.size=image.size};
     CGContextDrawImage(context, rect, image.CGImage);
     //Create NSdata from bytes
-    data=[NSData dataWithBytes:CGBitmapContextGetData(context) length:width*height*4];
+    data=[NSData dataWithBytes:CGBitmapContextGetData(context) length:(width*height*4)];
     CGContextRelease(context);
     return data;
 }
